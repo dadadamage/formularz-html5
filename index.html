@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie domowe - Formularz HTML5</title>
+</head>
+
+
+<body>
+    <form action="https://formspree.io/pawel.piotr.polak@gmail.com" method="POST">
+        <label for="name">Imię:</label><br>
+        <input type="text" name="name" id="name" placeholder="wpisz imię"><br>
+
+        <label for="lastname">Nazwisko:</label><br>
+        <input type="text" name="lastname" id="lastname" placeholder="wpisz nazwisko"><br>
+
+        <label for="mail">E-mail:</label><br>
+        <input type="email" name="_replyto" id="mail" placeholder="wpisz e-mail"><br>
+
+        <label for="phone">Telefon:</label><br>
+        <input type="tel" name="phone" id="phone" placeholder="wpisz numer telefonu"><br>
+
+        <label for="city">Wybierz miasto:</label><br>
+        <select name="city" id="city">
+<option value="krakow">Kraków</option>
+<option value="warszawa">Warszawa</option>
+<option value="gdansk">Gdańsk</option>
+</select><br>
+
+        <label>Wybierz płeć:</label><br>
+        <label><input type="radio" name="gender" value="male" checked=""> Mężczyzna</label><br>
+
+        <label><input type="radio" name="gender" value="female"> Kobieta</label><br>
+
+
+        <label for="message">Wiadomość: </label><br>
+        <textarea name="message" cols="30" rows="10" maxlength="100" id="message" placeholder="wpisz wiadomość"></textarea><br>
+
+
+        <label for="agreement"><br>
+<input type="checkbox" id="agreement" name="agreement">Wyrażam zgodę na przetwarzanie danych osobowych
+</label><br>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
